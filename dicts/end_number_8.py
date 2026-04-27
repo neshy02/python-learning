@@ -1,8 +1,5 @@
 # https://stepik.org/lesson/488830/step/10?unit=480066
 
-from typing import Any
-
-
 users = [
     {"name": "Hank", "phone": "124-3818", "email": "hank@gmail.com"},
     {"name": "Petr", "phone": "555-1618", "email": "helga@mail.net"},
