@@ -12,5 +12,6 @@ info = {
 
 num_key = input()
 
-print()
+if num_key in info:
+    print(f'{num_key}: {info[num_key][0]}, {info[num_key][1]}, {info[num_key][2]}')
 
