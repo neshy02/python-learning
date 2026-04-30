@@ -1,0 +1,23 @@
+# https://stepik.org/lesson/488831/step/3?unit=480067 CTRL C + CTRL V 
+
+frst = ''.join([i.strip('.,!?:;-') for i in input().split()]).lower()
+sec = ''.join([i.strip('.,!?:;-') for i in input().split()]).lower()
+res_frst = {}
+res_sec = {}
+
+for ch in frst:
+    if ch in res_frst:
+        res_frst[ch] += 1
+    else:
+        res_frst.update({ch: 1})
+
+for ch in sec:
+    if ch in res_sec:
+        res_sec[ch] += 1
+    else:
+        res_sec.update({ch: 1})
+
+if res_frst == res_sec:
+    print('YES')
+else:
+    print('NO')
